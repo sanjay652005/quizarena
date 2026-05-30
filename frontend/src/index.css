@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-dark text-white font-body antialiased;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* ── Buttons ─────────────────────────────────────────────────────────── */
+  .btn-primary {
+    @apply bg-brand-yellow text-brand-dark font-display font-700 px-6 py-3 rounded-xl
+           hover:bg-yellow-400 active:scale-95 transition-all duration-150
+           disabled:opacity-40 disabled:cursor-not-allowed disabled:active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply bg-brand-card text-white font-display font-600 px-6 py-3 rounded-xl
+           border border-brand-border hover:border-brand-yellow hover:text-brand-yellow
+           active:scale-95 transition-all duration-150
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-brand-muted font-display font-500 px-4 py-2 rounded-lg
+           hover:text-white hover:bg-brand-card transition-all duration-150;
+  }
+
+  /* ── Inputs ──────────────────────────────────────────────────────────── */
+  .input-field {
+    @apply w-full bg-brand-card border border-brand-border rounded-xl px-4 py-3
+           text-white placeholder-brand-muted font-body
+           focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow
+           transition-colors duration-150;
+  }
+
+  /* ── Cards ───────────────────────────────────────────────────────────── */
+  .card {
+    @apply bg-brand-card border border-brand-border rounded-2xl p-6;
+  }
+
+  .card-hover {
+    @apply card hover:border-brand-yellow/50 transition-colors duration-200 cursor-pointer;
+  }
+
+  /* ── Quiz option buttons ──────────────────────────────────────────────── */
+  .option-btn {
+    @apply w-full text-left px-5 py-4 rounded-xl border-2 border-brand-border
+           font-body font-500 text-white bg-brand-card
+           hover:border-brand-yellow/60 hover:bg-brand-yellow/5
+           active:scale-[0.98] transition-all duration-150 cursor-pointer;
+  }
+
+  .option-btn-selected {
+    @apply border-brand-yellow bg-brand-yellow/10 text-brand-yellow;
+  }
+
+  .option-btn-correct {
+    @apply border-green-400 bg-green-400/10 text-green-400;
+  }
+
+  .option-btn-wrong {
+    @apply border-red-400 bg-red-400/10 text-red-400;
+  }
+
+  .option-btn-disabled {
+    @apply opacity-60 cursor-not-allowed active:scale-100;
+  }
+
+  /* ── Badge ───────────────────────────────────────────────────────────── */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-display font-600;
+  }
+
+  .badge-yellow {
+    @apply badge bg-brand-yellow/20 text-brand-yellow;
+  }
+
+  .badge-green {
+    @apply badge bg-green-400/20 text-green-400;
+  }
+
+  .badge-red {
+    @apply badge bg-red-400/20 text-red-400;
+  }
+}
+
+@layer utilities {
+  .font-700 { font-weight: 700; }
+  .font-600 { font-weight: 600; }
+  .font-500 { font-weight: 500; }
+
+  /* Noise texture overlay */
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  /* Scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar { width: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-track { @apply bg-transparent; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-brand-border rounded-full; }
+}

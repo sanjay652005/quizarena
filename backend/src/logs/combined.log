@@ -1,0 +1,32 @@
+2026-03-21 18:03:10 [info]: Socket.io initialised
+2026-03-21 18:03:10 [info]: MongoDB connected: localhost
+2026-03-21 18:03:10 [info]: QuizArena backend running on port 5000 [development]
+2026-03-21 18:03:10 [info]: Socket.io listening on port 5000
+2026-03-21 18:03:43 [info]: Socket connected: kPcK_BAbOhlUbM9RAAAC (user: test)
+2026-03-21 18:03:58 [info]: Socket connected: SlFE-7BQ4LSLAk87AAAF (user: test)
+2026-03-21 18:04:10 [info]: Generated and saved 10 questions for topic "india" using Groq
+2026-03-21 18:05:11 [info]: Generated and saved 10 questions for topic "india" using Groq
+2026-03-21 18:06:12 [info]: test disconnected
+2026-03-21 18:06:12 [info]: Socket connected: 3zox5y-_u-63ELh2AAAH (user: test)
+2026-03-21 18:06:12 [info]: test disconnected
+2026-03-21 18:06:12 [info]: Socket connected: T_OBW_1pOOZLMcMeAAAJ (user: test)
+2026-03-21 18:06:16 [info]: test disconnected
+2026-03-21 18:06:16 [info]: Socket connected: sVqUmJZGtjFK5jBnAAAM (user: test)
+2026-03-21 18:07:07 [info]: test disconnected
+2026-03-21 18:07:08 [info]: Socket connected: 7YJ7tPh0KscjhsSJAAAO (user: test)
+2026-03-21 18:07:24 [info]: Generated and saved 10 questions for topic "solar" using Groq
+2026-03-21 18:10:53 [info]: test disconnected
+2026-03-21 18:10:53 [info]: test disconnected
+2026-03-21 18:10:57 [info]: Socket.io initialised
+2026-03-21 18:10:57 [info]: MongoDB connected: localhost
+2026-03-21 18:10:57 [info]: QuizArena backend running on port 5000 [development]
+2026-03-21 18:10:57 [info]: Socket.io listening on port 5000
+2026-05-24 20:07:00 [info]: Socket.io initialised
+2026-05-24 20:07:00 [info]: MongoDB connected: localhost
+2026-05-24 20:07:00 [info]: QuizArena backend running on port 5000 [development]
+2026-05-24 20:07:00 [info]: Socket.io listening on port 5000
+2026-05-24 20:22:30 [info]: Socket.io initialised
+2026-05-24 20:22:30 [info]: MongoDB connected: localhost
+2026-05-24 20:22:30 [info]: QuizArena backend running on port 5000 [development]
+2026-05-24 20:22:30 [info]: Socket.io listening on port 5000
+2026-05-24 20:25:47 [info]: SIGINT received — shutting down gracefully
